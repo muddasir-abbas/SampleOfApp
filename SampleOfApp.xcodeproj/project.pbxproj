@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		808D853E2B5ACCA40003F6C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 808D853D2B5ACCA40003F6C0 /* GoogleService-Info.plist */; };
 		8096797E2B5938BA00C8743F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096797D2B5938BA00C8743F /* AppDelegate.swift */; };
 		809679802B5938BA00C8743F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096797F2B5938BA00C8743F /* SceneDelegate.swift */; };
 		809679822B5938BA00C8743F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679812B5938BA00C8743F /* ViewController.swift */; };
@@ -16,6 +17,33 @@
 		809679952B5938BB00C8743F /* SampleOfAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679942B5938BB00C8743F /* SampleOfAppTests.swift */; };
 		8096799F2B5938BB00C8743F /* SampleOfAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096799E2B5938BB00C8743F /* SampleOfAppUITests.swift */; };
 		809679A12B5938BB00C8743F /* SampleOfAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679A02B5938BB00C8743F /* SampleOfAppUITestsLaunchTests.swift */; };
+		809679AF2B59391000C8743F /* LoginAndRegistrationReqModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679AE2B59391000C8743F /* LoginAndRegistrationReqModel.swift */; };
+		809679B12B59391E00C8743F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679B02B59391E00C8743F /* APIService.swift */; };
+		809679B32B59392D00C8743F /* CheckStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679B22B59392D00C8743F /* CheckStatusModel.swift */; };
+		809679B52B59393900C8743F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679B42B59393900C8743F /* Validation.swift */; };
+		809679B72B59394500C8743F /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679B62B59394500C8743F /* GlobalConstant.swift */; };
+		809679B92B59395100C8743F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679B82B59395100C8743F /* Utility.swift */; };
+		809679BC2B59397600C8743F /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679BB2B59397600C8743F /* RoundButton.swift */; };
+		809679BE2B59398200C8743F /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679BD2B59398200C8743F /* RoundView.swift */; };
+		809679C02B59398D00C8743F /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679BF2B59398D00C8743F /* AppExtension.swift */; };
+		809679C22B59399A00C8743F /* ChatBuubleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679C12B59399A00C8743F /* ChatBuubleView.swift */; };
+		809679C42B5939A700C8743F /* ReceiverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679C32B5939A700C8743F /* ReceiverCell.swift */; };
+		809679C62B5939B400C8743F /* SenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679C52B5939B400C8743F /* SenderCell.swift */; };
+		809679C92B5939C600C8743F /* SendImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679C82B5939C600C8743F /* SendImageCell.swift */; };
+		809679CB2B5939D500C8743F /* ReceiveImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679CA2B5939D500C8743F /* ReceiveImageCell.swift */; };
+		809679CD2B593A0000C8743F /* VerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679CC2B593A0000C8743F /* VerificationController.swift */; };
+		809679D02B593A2500C8743F /* Forget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679CF2B593A2500C8743F /* Forget.swift */; };
+		809679D42B593AAA00C8743F /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679D32B593AAA00C8743F /* SignUp.swift */; };
+		809679D72B593AF700C8743F /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679D62B593AF700C8743F /* Verification.swift */; };
+		809679DA2B593B2400C8743F /* VerificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679D92B593B2400C8743F /* VerificationScreen.swift */; };
+		809679DF2B593B5C00C8743F /* scanerQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679DE2B593B5C00C8743F /* scanerQRCode.swift */; };
+		809679E12B593B8000C8743F /* addDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679E02B593B8000C8743F /* addDevice.swift */; };
+		809679E32B593C0D00C8743F /* submitDetals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679E22B593C0D00C8743F /* submitDetals.swift */; };
+		809679E72B593C8000C8743F /* PhnNoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679E62B593C8000C8743F /* PhnNoAuth.swift */; };
+		809679E92B593C9700C8743F /* NewPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679E82B593C9700C8743F /* NewPasswordController.swift */; };
+		809679EB2B593CAE00C8743F /* chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809679EA2B593CAE00C8743F /* chat.swift */; };
+		809679ED2B5942C300C8743F /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 809679EC2B5942C300C8743F /* Font */; };
+		D8A2264F0C46C69A7357F01E /* Pods_SampleOfApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5BA82720F42DBD7292F766 /* Pods_SampleOfApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02FF42308FD43B1D8CF588A9 /* Pods-SampleOfApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleOfApp.release.xcconfig"; path = "Target Support Files/Pods-SampleOfApp/Pods-SampleOfApp.release.xcconfig"; sourceTree = "<group>"; };
+		454B948B9F3E45CDF4BAAF62 /* Pods-SampleOfApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleOfApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleOfApp/Pods-SampleOfApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5BA82720F42DBD7292F766 /* Pods_SampleOfApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleOfApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		808D853D2B5ACCA40003F6C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8096797A2B5938BA00C8743F /* SampleOfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8096797D2B5938BA00C8743F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8096797F2B5938BA00C8743F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +81,33 @@
 		8096799A2B5938BB00C8743F /* SampleOfAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleOfAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8096799E2B5938BB00C8743F /* SampleOfAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleOfAppUITests.swift; sourceTree = "<group>"; };
 		809679A02B5938BB00C8743F /* SampleOfAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleOfAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		809679AE2B59391000C8743F /* LoginAndRegistrationReqModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegistrationReqModel.swift; sourceTree = "<group>"; };
+		809679B02B59391E00C8743F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		809679B22B59392D00C8743F /* CheckStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckStatusModel.swift; sourceTree = "<group>"; };
+		809679B42B59393900C8743F /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		809679B62B59394500C8743F /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
+		809679B82B59395100C8743F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		809679BB2B59397600C8743F /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		809679BD2B59398200C8743F /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		809679BF2B59398D00C8743F /* AppExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
+		809679C12B59399A00C8743F /* ChatBuubleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBuubleView.swift; sourceTree = "<group>"; };
+		809679C32B5939A700C8743F /* ReceiverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverCell.swift; sourceTree = "<group>"; };
+		809679C52B5939B400C8743F /* SenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCell.swift; sourceTree = "<group>"; };
+		809679C82B5939C600C8743F /* SendImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendImageCell.swift; sourceTree = "<group>"; };
+		809679CA2B5939D500C8743F /* ReceiveImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveImageCell.swift; sourceTree = "<group>"; };
+		809679CC2B593A0000C8743F /* VerificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationController.swift; sourceTree = "<group>"; };
+		809679CF2B593A2500C8743F /* Forget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forget.swift; sourceTree = "<group>"; };
+		809679D32B593AAA00C8743F /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		809679D62B593AF700C8743F /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		809679D92B593B2400C8743F /* VerificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationScreen.swift; sourceTree = "<group>"; };
+		809679DE2B593B5C00C8743F /* scanerQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scanerQRCode.swift; sourceTree = "<group>"; };
+		809679E02B593B8000C8743F /* addDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDevice.swift; sourceTree = "<group>"; };
+		809679E22B593C0D00C8743F /* submitDetals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submitDetals.swift; sourceTree = "<group>"; };
+		809679E62B593C8000C8743F /* PhnNoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhnNoAuth.swift; sourceTree = "<group>"; };
+		809679E82B593C9700C8743F /* NewPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordController.swift; sourceTree = "<group>"; };
+		809679EA2B593CAE00C8743F /* chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat.swift; sourceTree = "<group>"; };
+		809679EC2B5942C300C8743F /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Font; path = Font/Font; sourceTree = "<group>"; };
+		809679EE2B59456900C8743F /* MobileApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A2264F0C46C69A7357F01E /* Pods_SampleOfApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +143,8 @@
 				809679932B5938BB00C8743F /* SampleOfAppTests */,
 				8096799D2B5938BB00C8743F /* SampleOfAppUITests */,
 				8096797B2B5938BA00C8743F /* Products */,
+				9557FD14F6B5437C8727ECF3 /* Pods */,
+				B26E689D78B2B158B5D28D2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +161,26 @@
 		8096797C2B5938BA00C8743F /* SampleOfApp */ = {
 			isa = PBXGroup;
 			children = (
+				809679AD2B5938ED00C8743F /* Networking */,
+				809679BA2B59395B00C8743F /* Classes */,
+				809679C72B5939BD00C8743F /* SignInController */,
+				809679CE2B593A1000C8743F /* ForgetController */,
+				809679D12B593A7900C8743F /* SignUpController */,
+				809679EC2B5942C300C8743F /* Font */,
+				809679D52B593AD100C8743F /* VerificationController */,
+				809679D82B593B0600C8743F /* ScreenVerification */,
+				809679DB2B593B3200C8743F /* QRCode */,
+				809679DD2B593B4400C8743F /* AddDevice */,
+				809679DC2B593B4000C8743F /* Submit */,
+				809679E42B593C1300C8743F /* PhnAuth */,
 				8096797D2B5938BA00C8743F /* AppDelegate.swift */,
 				8096797F2B5938BA00C8743F /* SceneDelegate.swift */,
-				809679812B5938BA00C8743F /* ViewController.swift */,
 				809679832B5938BA00C8743F /* Main.storyboard */,
 				809679862B5938BB00C8743F /* Assets.xcassets */,
 				809679882B5938BB00C8743F /* LaunchScreen.storyboard */,
 				8096798B2B5938BB00C8743F /* Info.plist */,
+				808D853D2B5ACCA40003F6C0 /* GoogleService-Info.plist */,
+				809679EE2B59456900C8743F /* MobileApp-Bridging-Header.h */,
 			);
 			path = SampleOfApp;
 			sourceTree = "<group>";
@@ -127,6 +202,126 @@
 			path = SampleOfAppUITests;
 			sourceTree = "<group>";
 		};
+		809679AD2B5938ED00C8743F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				809679AE2B59391000C8743F /* LoginAndRegistrationReqModel.swift */,
+				809679B02B59391E00C8743F /* APIService.swift */,
+				809679B22B59392D00C8743F /* CheckStatusModel.swift */,
+				809679B42B59393900C8743F /* Validation.swift */,
+				809679B62B59394500C8743F /* GlobalConstant.swift */,
+				809679B82B59395100C8743F /* Utility.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		809679BA2B59395B00C8743F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				809679BB2B59397600C8743F /* RoundButton.swift */,
+				809679BD2B59398200C8743F /* RoundView.swift */,
+				809679BF2B59398D00C8743F /* AppExtension.swift */,
+				809679C12B59399A00C8743F /* ChatBuubleView.swift */,
+				809679C32B5939A700C8743F /* ReceiverCell.swift */,
+				809679C52B5939B400C8743F /* SenderCell.swift */,
+				809679C82B5939C600C8743F /* SendImageCell.swift */,
+				809679CA2B5939D500C8743F /* ReceiveImageCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		809679C72B5939BD00C8743F /* SignInController */ = {
+			isa = PBXGroup;
+			children = (
+				809679812B5938BA00C8743F /* ViewController.swift */,
+				809679CC2B593A0000C8743F /* VerificationController.swift */,
+			);
+			path = SignInController;
+			sourceTree = "<group>";
+		};
+		809679CE2B593A1000C8743F /* ForgetController */ = {
+			isa = PBXGroup;
+			children = (
+				809679CF2B593A2500C8743F /* Forget.swift */,
+			);
+			path = ForgetController;
+			sourceTree = "<group>";
+		};
+		809679D12B593A7900C8743F /* SignUpController */ = {
+			isa = PBXGroup;
+			children = (
+				809679D32B593AAA00C8743F /* SignUp.swift */,
+			);
+			path = SignUpController;
+			sourceTree = "<group>";
+		};
+		809679D52B593AD100C8743F /* VerificationController */ = {
+			isa = PBXGroup;
+			children = (
+				809679D62B593AF700C8743F /* Verification.swift */,
+			);
+			path = VerificationController;
+			sourceTree = "<group>";
+		};
+		809679D82B593B0600C8743F /* ScreenVerification */ = {
+			isa = PBXGroup;
+			children = (
+				809679D92B593B2400C8743F /* VerificationScreen.swift */,
+			);
+			path = ScreenVerification;
+			sourceTree = "<group>";
+		};
+		809679DB2B593B3200C8743F /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				809679DE2B593B5C00C8743F /* scanerQRCode.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		809679DC2B593B4000C8743F /* Submit */ = {
+			isa = PBXGroup;
+			children = (
+				809679E22B593C0D00C8743F /* submitDetals.swift */,
+			);
+			path = Submit;
+			sourceTree = "<group>";
+		};
+		809679DD2B593B4400C8743F /* AddDevice */ = {
+			isa = PBXGroup;
+			children = (
+				809679E02B593B8000C8743F /* addDevice.swift */,
+			);
+			path = AddDevice;
+			sourceTree = "<group>";
+		};
+		809679E42B593C1300C8743F /* PhnAuth */ = {
+			isa = PBXGroup;
+			children = (
+				809679E62B593C8000C8743F /* PhnNoAuth.swift */,
+				809679E82B593C9700C8743F /* NewPasswordController.swift */,
+				809679EA2B593CAE00C8743F /* chat.swift */,
+			);
+			path = PhnAuth;
+			sourceTree = "<group>";
+		};
+		9557FD14F6B5437C8727ECF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				454B948B9F3E45CDF4BAAF62 /* Pods-SampleOfApp.debug.xcconfig */,
+				02FF42308FD43B1D8CF588A9 /* Pods-SampleOfApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B26E689D78B2B158B5D28D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B5BA82720F42DBD7292F766 /* Pods_SampleOfApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 809679A42B5938BB00C8743F /* Build configuration list for PBXNativeTarget "SampleOfApp" */;
 			buildPhases = (
+				BA9D116D18F51AE9DCB7794E /* [CP] Check Pods Manifest.lock */,
 				809679762B5938BA00C8743F /* Sources */,
 				809679772B5938BA00C8743F /* Frameworks */,
 				809679782B5938BA00C8743F /* Resources */,
+				7DE71602655BF43473E8E057 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +430,9 @@
 			files = (
 				8096798A2B5938BB00C8743F /* LaunchScreen.storyboard in Resources */,
 				809679872B5938BB00C8743F /* Assets.xcassets in Resources */,
+				808D853E2B5ACCA40003F6C0 /* GoogleService-Info.plist in Resources */,
 				809679852B5938BA00C8743F /* Main.storyboard in Resources */,
+				809679ED2B5942C300C8743F /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +452,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DE71602655BF43473E8E057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleOfApp/Pods-SampleOfApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleOfApp/Pods-SampleOfApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleOfApp/Pods-SampleOfApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9D116D18F51AE9DCB7794E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleOfApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		809679762B5938BA00C8743F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809679E92B593C9700C8743F /* NewPasswordController.swift in Sources */,
 				809679822B5938BA00C8743F /* ViewController.swift in Sources */,
+				809679BE2B59398200C8743F /* RoundView.swift in Sources */,
+				809679DA2B593B2400C8743F /* VerificationScreen.swift in Sources */,
+				809679B12B59391E00C8743F /* APIService.swift in Sources */,
+				809679C02B59398D00C8743F /* AppExtension.swift in Sources */,
+				809679C42B5939A700C8743F /* ReceiverCell.swift in Sources */,
+				809679B92B59395100C8743F /* Utility.swift in Sources */,
+				809679CD2B593A0000C8743F /* VerificationController.swift in Sources */,
+				809679B72B59394500C8743F /* GlobalConstant.swift in Sources */,
+				809679B32B59392D00C8743F /* CheckStatusModel.swift in Sources */,
+				809679D42B593AAA00C8743F /* SignUp.swift in Sources */,
+				809679E12B593B8000C8743F /* addDevice.swift in Sources */,
+				809679AF2B59391000C8743F /* LoginAndRegistrationReqModel.swift in Sources */,
+				809679BC2B59397600C8743F /* RoundButton.swift in Sources */,
+				809679D02B593A2500C8743F /* Forget.swift in Sources */,
 				8096797E2B5938BA00C8743F /* AppDelegate.swift in Sources */,
+				809679C92B5939C600C8743F /* SendImageCell.swift in Sources */,
+				809679C62B5939B400C8743F /* SenderCell.swift in Sources */,
+				809679CB2B5939D500C8743F /* ReceiveImageCell.swift in Sources */,
 				809679802B5938BA00C8743F /* SceneDelegate.swift in Sources */,
+				809679EB2B593CAE00C8743F /* chat.swift in Sources */,
+				809679D72B593AF700C8743F /* Verification.swift in Sources */,
+				809679B52B59393900C8743F /* Validation.swift in Sources */,
+				809679C22B59399A00C8743F /* ChatBuubleView.swift in Sources */,
+				809679E72B593C8000C8743F /* PhnNoAuth.swift in Sources */,
+				809679DF2B593B5C00C8743F /* scanerQRCode.swift in Sources */,
+				809679E32B593C0D00C8743F /* submitDetals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +703,14 @@
 		};
 		809679A52B5938BB00C8743F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454B948B9F3E45CDF4BAAF62 /* Pods-SampleOfApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FCUFF9YMW4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleOfApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -455,7 +723,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = LeadConcept.SampleOfApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technoblick.MobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,12 +733,14 @@
 		};
 		809679A62B5938BB00C8743F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FF42308FD43B1D8CF588A9 /* Pods-SampleOfApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FCUFF9YMW4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleOfApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -483,7 +753,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = LeadConcept.SampleOfApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technoblick.MobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
