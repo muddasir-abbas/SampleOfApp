@@ -3,4 +3,150 @@
    uuid = "B3FE2314-70C6-421B-A730-4F6B28B825B2"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E27CD4B7-8D3E-4789-8926-6609CA95E84D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleOfApp/SignInController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "userLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98A60A27-9A59-424F-B4D8-1E12672D2EF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleOfApp/SignInController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "userLogin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98A60A27-9A59-424F-B4D8-1E12672D2EF6 - 17b510d514a58cd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleOfApp.ViewController.userLogin() -&gt; ()"
+                  moduleName = "SampleOfApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/interlink/Desktop/SampleOfApp/SampleOfApp/SignInController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "984">
+               </Location>
+               <Location
+                  uuid = "98A60A27-9A59-424F-B4D8-1E12672D2EF6 - c1cf03604b87d5e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;__C.NSDictionary&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SampleOfApp.ViewController.userLogin() -&gt; ()"
+                  moduleName = "SampleOfApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/interlink/Desktop/SampleOfApp/SampleOfApp/SignInController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D50D7D9D-9F2B-41E0-BEBD-53E6B6C6D89E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleOfApp/Networking/LoginAndRegistrationReqModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "initLogin(strEmail:strPassword:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81A32FDF-1A43-4790-A629-BF753B94E7BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleOfApp/Networking/LoginAndRegistrationReqModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "initLogin(strEmail:strPassword:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5675FA0E-FD29-4B4B-9827-12C66B731A23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleOfApp/Networking/LoginAndRegistrationReqModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "initLogin(strEmail:strPassword:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5675FA0E-FD29-4B4B-9827-12C66B731A23 - 867a3602d2eb1294"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleOfApp.LoginAndRegistrationReqModel.initLogin(strEmail: Swift.String, strPassword: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;__C.NSDictionary&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SampleOfApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/interlink/Desktop/SampleOfApp/SampleOfApp/Networking/LoginAndRegistrationReqModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "5675FA0E-FD29-4B4B-9827-12C66B731A23 - f2388edba44b5d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Bool&gt;, Swift.Optional&lt;__C.NSDictionary&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SampleOfApp.LoginAndRegistrationReqModel.initLogin(strEmail: Swift.String, strPassword: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;__C.NSDictionary&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SampleOfApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/interlink/Desktop/SampleOfApp/SampleOfApp/Networking/LoginAndRegistrationReqModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
