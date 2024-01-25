@@ -173,8 +173,6 @@ class APIService
                 //print encodingError.description
             }
         }
-        
-        
     }
     
     /// makeApiRequest

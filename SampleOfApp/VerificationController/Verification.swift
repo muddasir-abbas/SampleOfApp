@@ -171,8 +171,8 @@ class Verification: UIViewController, UITextViewDelegate, AEOTPTextFieldDelegate
                           SVProgressHUD.showSuccess(withStatus: message)
                       }
                       else
-                      {
-                          SVProgressHUD.showError(withStatus: message)
+                          {
+                              SVProgressHUD.showError(withStatus: message)
                       }
                       print("message", message)
                   }
