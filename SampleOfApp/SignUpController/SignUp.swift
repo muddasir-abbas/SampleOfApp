@@ -35,7 +35,9 @@ class SignUp: UIViewController, FPNTextFieldDelegate, UITextFieldDelegate {
     @IBOutlet weak var selectquestionTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var yourquestionTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var answerTextField: SkyFloatingLabelTextField!
-
+    
+    @IBOutlet weak var clickterm: UIButton!
+    
     var textSecure:Bool = true
     var tickBtn = false
     
@@ -110,7 +112,7 @@ class SignUp: UIViewController, FPNTextFieldDelegate, UITextFieldDelegate {
         let email: String = self.emaiTxtFld.text!.trim
         let password: String = self.passwordTxtFld.text!
         let phoneNo: String = self.phonNoTxtFld.text!.trim
-        SVProgressHUD.show()
+//        SVProgressHUD.show()
         LoginAndRegistrationReqModel.sharedModel().initSignUp(username:username, email:email, phoneNO: phoneNo, password:password, completion: { (status, response, error) in
             if(status) {
                 let success = response!.value(forKey: "success") as! Bool
@@ -218,28 +220,109 @@ class SignUp: UIViewController, FPNTextFieldDelegate, UITextFieldDelegate {
         print("ok")
     }
     @IBAction func btnnxt(_ sender: Any) {
-        let Phone = self.phonNoTxtFld.text
-        
-        PhoneAuthProvider.provider().verifyPhoneNumber(Phone!, uiDelegate: nil) { (verificationID, error) in
-            
-            if let error = error {
-                print(error)
-                let alert = UIAlertController(title: "Alert", message: "Code Send to the given number", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                
-                print("error")
-                return
-            }
-            
-            if let verificationID = verificationID {
-                print("")
-                UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-                let sb = UIStoryboard.init(name: "Main", bundle: nil)
-                let signupVC = sb.instantiateViewController(withIdentifier: "Verification") as! Verification
-                self.navigationController?.pushViewController(signupVC, animated: true)
-            }
+        guard let username = classTextField.text, !username.isEmpty else {
+            showAlert(message: "Please enter your full name")
+            return
         }
+
+        guard let email = emaiTxtFld.text, !email.isEmpty else {
+            showAlert(message: "Please enter your email")
+            return
+        }
+
+        guard let password = passwordTxtFld.text, !password.isEmpty else {
+            showAlert(message: "Please enter a password")
+            return
+        }
+
+        guard let repeatPassword = repeatPasswordTxtFld.text, !repeatPassword.isEmpty else {
+            showAlert(message: "Please repeat the password")
+            return
+        }
+
+        guard let phoneNo = phonNoTxtFld.text, !phoneNo.isEmpty else {
+            showAlert(message: "Please enter your phone number")
+            return
+        }
+
+        guard let selectedQuestion = selectquestionTextField.text, !selectedQuestion.isEmpty else {
+            showAlert(message: "Please select a security question")
+            return
+        }
+
+        // Check if the passwords match
+        if password != repeatPassword {
+            showAlert(message: "Passwords do not match")
+            return
+        }
+
+        // Check if terms and conditions are accepted
+        if !tickBtn {
+            showAlert(message: "Please accept the terms and conditions")
+            return
+        }
+
+        // If all validations pass, send verification code
+        SVProgressHUD.dismiss()
+                let Phone = self.phonNoTxtFld.text
+        
+                PhoneAuthProvider.provider().verifyPhoneNumber(Phone!, uiDelegate: nil) { (verificationID, error) in
+        
+                    if let error = error {
+                        print(error)
+                        let alert = UIAlertController(title: "Alert", message: "Code Send to the given number", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+        
+                        print("error")
+                        return
+                    }
+        
+                    if let verificationID = verificationID {
+                        print("")
+                        UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+                        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+                        let signupVC = sb.instantiateViewController(withIdentifier: "Verification") as! Verification
+                        self.navigationController?.pushViewController(signupVC, animated: true)
+                    }
+                
+        // Code to send verification code goes here...
+
+        // Now, you can move to the next view controller
+//        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+//        let signupVC = sb.instantiateViewController(withIdentifier: "Verification") as! Verification
+//        self.navigationController?.pushViewController(signupVC, animated: true)
+    }
+
+    // Helper function to show an alert with a given message
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+        
+//        let Phone = self.phonNoTxtFld.text
+//        
+//        PhoneAuthProvider.provider().verifyPhoneNumber(Phone!, uiDelegate: nil) { (verificationID, error) in
+//            
+//            if let error = error {
+//                print(error)
+//                let alert = UIAlertController(title: "Alert", message: "Code Send to the given number", preferredStyle: UIAlertController.Style.alert)
+//                alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//                
+//                print("error")
+//                return
+//            }
+//            
+//            if let verificationID = verificationID {
+//                print("")
+//                UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+//                let sb = UIStoryboard.init(name: "Main", bundle: nil)
+//                let signupVC = sb.instantiateViewController(withIdentifier: "Verification") as! Verification
+//                self.navigationController?.pushViewController(signupVC, animated: true)
+//            }
+//        }
         
         
         func textFieldDidBeginEditing(_ textField: UITextField) {

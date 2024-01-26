@@ -729,11 +729,11 @@
         <scene sceneID="paO-kD-xgR">
             <objects>
                 <viewController storyboardIdentifier="Details" id="zls-wg-sCe" userLabel="SignUp" customClass="SignUp" customModule="SampleOfApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HXt-XE-NYu">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="HXt-XE-NYu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-7E-6NH">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-7E-6NH">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXL-QM-QUI">
@@ -1321,6 +1321,7 @@
                         <outlet property="answerTxtFldView" destination="P9q-bt-1kr" id="qeO-Lm-vzC"/>
                         <outlet property="classTextField" destination="fOg-jj-h5I" id="aaT-Ll-Dba"/>
                         <outlet property="classTxtFldView" destination="1P6-p3-diB" id="tQr-ne-bT4"/>
+                        <outlet property="clickterm" destination="Z5r-cq-hdx" id="3px-82-yL1"/>
                         <outlet property="countryCodeTxtFld" destination="aCN-Qj-A0X" id="lBl-RZ-zoP"/>
                         <outlet property="emaiTxtFld" destination="Ayq-kc-QjO" id="6Tc-CE-dpr"/>
                         <outlet property="emailTxtFldView" destination="vNz-4p-zLC" id="akS-do-N7j"/>
@@ -2913,6 +2914,7 @@
                                                         <connections>
                                                             <action selector="btnReSendPswrd:" destination="axs-Rb-J7Q" eventType="touchUpInside" id="IH9-Fj-EPa"/>
                                                             <action selector="btnTimmerPressed:" destination="axs-Rb-J7Q" eventType="touchUpInside" id="3lF-O1-Pvy"/>
+                                                            <action selector="codeSendToNum:" destination="z9e-UQ-JUt" eventType="touchUpInside" id="yQd-3l-zrt"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -2969,6 +2971,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfx-L2-arJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="z9e-UQ-JUt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4019" y="-664"/>
         </scene>
@@ -2977,23 +2980,17 @@
         <designable name="04R-rS-SBa">
             <size key="intrinsicContentSize" width="92.666666666666671" height="34.333333333333336"/>
         </designable>
-        <designable name="0HS-Fw-dWk">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="1xH-Af-h43">
-            <size key="intrinsicContentSize" width="255" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="2Ja-IT-FRW">
-            <size key="intrinsicContentSize" width="346" height="46.380859375"/>
-        </designable>
-        <designable name="2MT-rk-nH4">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="5" height="25.666666666666668"/>
         </designable>
         <designable name="3jQ-r0-ELs">
-            <size key="intrinsicContentSize" width="354" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="Ayq-kc-QjO">
-            <size key="intrinsicContentSize" width="356" height="48.767578125"/>
+            <size key="intrinsicContentSize" width="34" height="36"/>
         </designable>
         <designable name="BNf-gB-LoT">
             <size key="intrinsicContentSize" width="203" height="35.666666666666664"/>
@@ -3002,22 +2999,16 @@
             <size key="intrinsicContentSize" width="72.333333333333329" height="40.333333333333336"/>
         </designable>
         <designable name="CMF-Tg-xXR">
-            <size key="intrinsicContentSize" width="356" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="D5j-Cx-7IS">
             <size key="intrinsicContentSize" width="72.333333333333329" height="34.333333333333336"/>
         </designable>
-        <designable name="Dt6-D8-8Ac">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="ETH-4H-eRR">
             <size key="intrinsicContentSize" width="163.66666666666666" height="34.333333333333336"/>
         </designable>
-        <designable name="I2d-0k-W95">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="MAv-pL-Cr9">
-            <size key="intrinsicContentSize" width="294" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="N8I-ME-4SV">
             <size key="intrinsicContentSize" width="97.666666666666671" height="40.333333333333336"/>
@@ -3026,66 +3017,54 @@
             <size key="intrinsicContentSize" width="64.666666666666671" height="34.333333333333336"/>
         </designable>
         <designable name="RhU-zS-JsY">
-            <size key="intrinsicContentSize" width="354" height="46.380859375"/>
-        </designable>
-        <designable name="SUp-Gd-3Rj">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="TXZ-UN-3pf">
             <size key="intrinsicContentSize" width="67" height="38"/>
         </designable>
         <designable name="Urj-3i-m6G">
-            <size key="intrinsicContentSize" width="346" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="5" height="25.666666666666668"/>
         </designable>
         <designable name="VL9-IE-wgH">
-            <size key="intrinsicContentSize" width="356" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="Vr3-Kz-Ts8">
             <size key="intrinsicContentSize" width="92.666666666666671" height="34.333333333333336"/>
         </designable>
         <designable name="Y6N-5s-VpG">
-            <size key="intrinsicContentSize" width="340" height="43.994140625"/>
-        </designable>
-        <designable name="ZOq-w8-eTX">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="5" height="23.333333333333332"/>
         </designable>
         <designable name="Zlt-WH-2RV">
-            <size key="intrinsicContentSize" width="346" height="43.994140625"/>
-        </designable>
-        <designable name="aHL-4i-ebo">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="5" height="23.333333333333332"/>
         </designable>
         <designable name="c1V-2J-Gfk">
-            <size key="intrinsicContentSize" width="346" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="fOg-jj-h5I">
-            <size key="intrinsicContentSize" width="349" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="fUa-Mo-4fk">
             <size key="intrinsicContentSize" width="102" height="42.666666666666664"/>
         </designable>
         <designable name="hUE-Vl-Lwk">
-            <size key="intrinsicContentSize" width="294" height="46.380859375"/>
-        </designable>
-        <designable name="icC-62-4kA">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="mFo-Ha-leh">
-            <size key="intrinsicContentSize" width="300" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="33" height="34"/>
         </designable>
         <designable name="pgB-p6-K6T">
             <size key="intrinsicContentSize" width="52.666666666666664" height="49.333333333333336"/>
         </designable>
         <designable name="te9-Hg-fwV">
-            <size key="intrinsicContentSize" width="338" height="46.380859375"/>
+            <size key="intrinsicContentSize" width="47" height="25.666666666666668"/>
         </designable>
         <designable name="uvq-TF-C0p">
-            <size key="intrinsicContentSize" width="243" height="49.833671875"/>
+            <size key="intrinsicContentSize" width="5" height="29"/>
         </designable>
     </designables>
     <resources>
-        <image name="1.circle.fill" catalog="system" width="32" height="32"/>
-        <image name="2.circle.fill" catalog="system" width="32" height="32"/>
+        <image name="1.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="2.circle.fill" catalog="system" width="128" height="123"/>
         <image name="back-arrow" width="24" height="24"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="circle.square.fill" catalog="system" width="128" height="114"/>
@@ -3095,7 +3074,7 @@
         <image name="mail" width="40" height="40"/>
         <image name="paperclip" catalog="system" width="121" height="128"/>
         <image name="play" catalog="system" width="117" height="128"/>
-        <image name="restart" catalog="system" width="32" height="32"/>
+        <image name="restart" catalog="system" width="117" height="128"/>
         <image name="unclickOnTick" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

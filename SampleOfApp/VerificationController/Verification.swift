@@ -209,5 +209,9 @@ class Verification: UIViewController, UITextViewDelegate, AEOTPTextFieldDelegate
               })
           }
       }
+    
+    @IBAction func codeSendToNum(_ sender: Any) {
+        
+    }
 }
 
